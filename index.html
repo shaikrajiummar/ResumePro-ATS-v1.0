@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Rajiummar - Professional ATS Resume</title>
+  <meta name="description" content="Professional Full-Stack Developer & Software Engineer resume of Shaik Rajiummar. Designed with interactive customization and print-ready ATS optimization.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Courier+Prime&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Action Toolbar -->
+  <header class="app-header no-print">
+    <div class="header-container">
+      <div class="brand">
+        <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <span class="brand-title">ResumePro <span class="badge">ATS v1.0</span></span>
+      </div>
+      
+      <div class="controls">
+        <button id="btn-toggle-editor" class="btn btn-secondary" title="Toggle Live Editor">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <span>Edit Details</span>
+        </button>
+        
+        <div class="toggle-group">
+          <button id="btn-view-modern" class="btn btn-toggle active" title="Switch to Premium View">Modern</button>
+          <button id="btn-view-ats" class="btn btn-toggle" title="Switch to ATS Print-Ready View">ATS Print</button>
+        </div>
+
+        <button id="btn-toggle-theme" class="btn btn-icon" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        
+        <button id="btn-print" class="btn btn-primary" title="Print/Save as PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span>Export PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="app-container">
+    
+    <!-- Floating/Collapsible Editor Sidebar -->
+    <aside id="editor-sidebar" class="editor-sidebar no-print">
+      <div class="sidebar-header">
+        <h3>Resume Editor</h3>
+        <button id="btn-close-sidebar" class="btn-close" title="Close Editor">&times;</button>
+      </div>
+      
+      <div class="sidebar-content">
+        <!-- Personal Information Section -->
+        <details open class="editor-section">
+          <summary>Personal Info</summary>
+          <div class="form-group">
+            <label for="input-name">Full Name</label>
+            <input type="text" id="input-name">
+          </div>
+          <div class="form-group">
+            <label for="input-title">Title / Role</label>
+            <input type="text" id="input-title">
+          </div>
+          <div class="form-group">
+            <label for="input-location">Location</label>
+            <input type="text" id="input-location">
+          </div>
+          <div class="form-group">
+            <label for="input-phone">Phone</label>
+            <input type="text" id="input-phone">
+          </div>
+          <div class="form-group">
+            <label for="input-email">Email</label>
+            <input type="email" id="input-email">
+          </div>
+          <div class="form-group">
+            <label for="input-linkedin">LinkedIn URL</label>
+            <input type="text" id="input-linkedin">
+          </div>
+          <div class="form-group">
+            <label for="input-github">GitHub URL</label>
+            <input type="text" id="input-github">
+          </div>
+        </details>
+
+        <!-- Professional Summary Section -->
+        <details class="editor-section">
+          <summary>Professional Summary</summary>
+          <div class="form-group">
+            <label for="input-summary">Summary Text</label>
+            <textarea id="input-summary" rows="5"></textarea>
+          </div>
+        </details>
+
+        <!-- Technical Skills Section -->
+        <details class="editor-section">
+          <summary>Technical Skills</summary>
+          <div id="skills-editor-container">
+            <!-- Dynamic skills groups will render here -->
+          </div>
+        </details>
+
+        <!-- Education Section -->
+        <details class="editor-section">
+          <summary>Education</summary>
+          <div id="education-editor-container">
+            <!-- Dynamic education forms will render here -->
+          </div>
+        </details>
+
+        <!-- Academic Projects Section -->
+        <details class="editor-section">
+          <summary>Academic Projects</summary>
+          <div id="projects-editor-container">
+            <!-- Dynamic projects forms will render here -->
+          </div>
+        </details>
+
+        <!-- Certifications Section -->
+        <details class="editor-section">
+          <summary>Certifications</summary>
+          <div id="certifications-editor-container">
+            <!-- Dynamic certification entries will render here -->
+          </div>
+        </details>
+
+        <!-- Leadership Section -->
+        <details class="editor-section">
+          <summary>Leadership & Volunteer Work</summary>
+          <div id="leadership-editor-container">
+            <!-- Dynamic leadership forms will render here -->
+          </div>
+        </details>
+
+        <!-- Honors & Interests Section -->
+        <details class="editor-section">
+          <summary>Honors & Interests</summary>
+          <div class="form-group">
+            <label>Honors / Achievements (One per line)</label>
+            <textarea id="input-honors" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Interests (Comma separated)</label>
+            <input type="text" id="input-interests">
+          </div>
+        </details>
+      </div>
+    </aside>
+
+    <!-- Preview Stage -->
+    <div id="preview-stage" class="preview-stage view-mode-modern">
+      
+      <!-- Modern Interactive View -->
+      <section id="modern-resume-view" class="resume-sheet modern-theme">
+        <!-- Rendered dynamically via JavaScript -->
+      </section>
+
+      <!-- ATS Print-Ready View -->
+      <section id="ats-resume-view" class="resume-sheet ats-theme">
+        <!-- Rendered dynamically via JavaScript -->
+      </section>
+      
+    </div>
+
+  </main>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
